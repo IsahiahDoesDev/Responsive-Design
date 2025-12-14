@@ -134,7 +134,7 @@ li {
 
 #sidebar {
         display: none;
-    }
+    }b
 
 main {
     background-color: #eef0f0;
@@ -288,7 +288,6 @@ footer {
  
 
     .main-wrapper {
-        background-color: lightblue;
         display: grid;
         grid-template-columns: 225px 1fr;
 }
