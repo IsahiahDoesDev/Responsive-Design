@@ -168,14 +168,16 @@ main {
     margin-left: 0.5rem;
 }
 .dashboard-header {
+    display: flex;
+    flex-direction: column;
     margin: 0 0 1.5rem 1.3rem;
 }
-.dashboard-header > h2 {
-    font-weight: 900;
-     margin: 1.5rem 0 0.7rem 0;
-}
 
-.dashboard-header > p {
+.dashboard-text > h2 {
+    font-weight: 900;
+    margin: 1.5rem 0 0.7rem 0;
+}
+.dashboard-text > p {
     margin: 0 0 0.7rem 0;
     color: rgb(118, 115, 115);
 }
@@ -224,7 +226,7 @@ main {
     flex-direction: column;
     justify-content: center;
     margin-left: 1.5rem;
-    padding-bottom: 1.75rem;
+    padding-bottom: 1.4rem;
 }
 .data-image {
     margin-top: 1.5rem;
@@ -269,6 +271,36 @@ main {
     color: #c41339;
     background-color: #ffe4e6;
 }
+.data-container-2 {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+h3 {
+    margin: 1rem 1rem;
+}
+.sub-display {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    margin: 1rem 1rem;
+    background-color: #f9fbfc;
+    border: 1px solid rgba(177, 176, 176,0.4);
+}
+.sub-container {
+    display: grid;
+    place-content: center;
+    color: #767373;
+    height: 280px;
+    width: auto;
+    margin: 0 0.7rem 0.7rem 0.7rem;
+    background-color: rgba(235, 232, 232, 0.3);
+    border: 1px dashed rgba(177, 176, 176,0.3);
+    border-radius: 20px;
+}
 footer {
     background-color: #f9fbfc;
     box-shadow: 0px -0.5px 2px rgba(0, 0, 0, 0.3);
@@ -286,15 +318,46 @@ footer {
         background-color: #0f1629;
 }
  
-
     .main-wrapper {
         display: grid;
         grid-template-columns: 225px 1fr;
 }
+    main {
+        padding: 0 3rem;
+    }
 
     #name {
         display: inline;
         position: static;
     }
+    .dashboard-container {
+        width: 100%;
+    }
+    .dashboard-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin: 0 0 1.5rem 1.3rem;
+    }
+    .dashboard-text {
+        flex-grow: 1;
+    }
+    .dashboard-btns {
+        margin-right: 1rem;
+    }
+    .data-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+}
+    .display {
+        height: 175px;
+        width: 285px;
+        margin: 1rem 0;
+}
+
    
 }
